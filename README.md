@@ -115,7 +115,7 @@ This project was built to demonstrate a real-world, production-style implementat
 
 ### 🎨 Modern UI/UX
 
-Responsive layout across Desktop, Tablet, and Mobile • Angular **Signals** for reactive state management • **Tailwind CSS v4** utility-first styling with CSS-first config • Toast notifications for real-time feedback • Collapsible sidebar with role-filtered navigation • Elegant modal dialogs with keyboard interactions • Installable **Progressive Web App (PWA)**
+Responsive layout across Desktop, Tablet, and Mobile • Angular **Signals** for reactive state management • **Tailwind CSS v4.3.3** utility-first styling with CSS-first config • Toast notifications for real-time feedback • Collapsible sidebar with role-filtered navigation • Elegant modal dialogs with keyboard interactions • Installable **Progressive Web App (PWA)**
 
 ---
 
