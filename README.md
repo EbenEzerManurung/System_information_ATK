@@ -372,14 +372,6 @@ The app will be available at `http://localhost:4200`, connecting to the API at `
 
 ---
 
-## 🗺 Roadmap
-
-- [ ] Automated testing (unit + integration) with CI pipeline
-- [ ] Docker & Docker Compose support for one-command deployment
-- [ ] Email / push notifications for approval status changes
-- [ ] Multi-language (i18n) support
-- [ ] API documentation via Swagger/OpenAPI
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/EbenEzerManurung/System_information_ATK/issues) or open a pull request.
@@ -390,9 +382,9 @@ Contributions, issues, and feature requests are welcome. Feel free to check the 
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+# License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+MIT License
 
 ---
 
@@ -408,6 +400,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ⭐ If this project helped you, please consider giving it a star!
 
-*Built with ❤️ using Go 1.26, Angular 22, Tailwind v4, and MySQL 8.4*
+*Built with ❤️ using Go 1.26, Angular 22, Tailwind v4.3.3, and MySQL 8.4*
 
 </div>
