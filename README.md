@@ -267,7 +267,8 @@ System_information_ATK/
 <img width="1903" height="1006" alt="image" src="https://github.com/user-attachments/assets/abb75390-eccc-47b6-91fd-5bd95ec90dc3" />
 
 ### 🚀 Progressive Web App (PWA) 
-<img width="1918" height="1003" alt="image" src="https://github.com/user-attachments/assets/8034f191-038c-4783-b93f-64888ec3dc53" />
+<img width="1918" height="943" alt="image" src="https://github.com/user-attachments/assets/38a447b9-c20f-4314-a4a0-e3e92cf757b1" />
+
 
 ### 👥 User Management with RBAC
 
