@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>System Information ATK</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="description" content="Sistem Informasi Manajemen ATK - User, Role, Stock, Transaksi, Approval, QR Code">
+
+  <!-- Icons & PWA Manifest -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Loading Screen (hilang otomatis setelah Angular render) -->
+  <style>
+    #app-loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+    }
+    #app-loading.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid #bfdbfe;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    .app-loading-text {
+      margin-top: 16px;
+      color: #1e40af;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <app-root>
+    <!-- Konten di dalam <app-root> otomatis hilang saat Angular boot -->
+    <div id="app-loading">
+      <div class="spinner"></div>
+      <div class="app-loading-text">Memuat System Information ATK...</div>
+    </div>
+  </app-root>
+
+  <noscript>
+    <div style="padding:40px;text-align:center;font-family:sans-serif">
+      <h1 style="color:#1e40af">JavaScript Diperlukan</h1>
+      <p>Aplikasi ini membutuhkan JavaScript. Mohon aktifkan JavaScript di browser Anda.</p>
+    </div>
+  </noscript>
+
+  <!-- Script untuk hide loading setelah Angular render -->
+  <script>
+    // Kalau setelah 15 detik Angular belum render, tampilkan pesan error
+    setTimeout(function () {
+      var loader = document.getElementById('app-loading');
+      if (loader && !loader.classList.contains('hidden')) {
+        var text = loader.querySelector('.app-loading-text');
+        if (text) {
+          text.innerHTML = 'Gagal memuat aplikasi.<br><small style="color:#dc2626">Buka DevTools (F12) → Console untuk detail error</small>';
+        }
+        loader.querySelector('.spinner').style.borderTopColor = '#dc2626';
+      }
+    }, 15000);
+  </script>
+</body>
+</html>
