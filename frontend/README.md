@@ -164,7 +164,7 @@ Responsive across Desktop, Tablet, and Mobile.
 
 🏗 Project Architecture
 text
-                Client (Browser / PWA)
+                Client (Browser)
                           │
               Angular 22 + Signals
                           │
@@ -376,3 +376,51 @@ Unique constraints on username and email at the database level
 
 CORS configured to whitelist trusted origins only
 
+🗺 Roadmap
+☑ Core inventory management (CRUD)
+☑ Multi-level approval workflow
+☑ QR Code generation & scanning
+☑ Excel import/export
+☑ Role-based dashboards
+☑ Audit logging
+☑ JWT authentication with RBAC
+☑ Responsive UI with Angular Signals
+□ Push notifications for approval events
+□ Barcode scanner integration
+□ Multi-warehouse support
+□ CI/CD pipeline with GitHub Actions
+□ Progressive Web App (PWA) support
+□ Offline-first capability with Service Worker
+□ Dark mode theme
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+Please ensure your code follows the existing style and includes appropriate tests.
+
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+👨‍💻 Author
+Eben Nezer Manurung
+
+Backend Developer • Full Stack Developer
+
+https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
+
+<div align="center">
+⭐ If this project helps you, please give it a star!
+Built with ❤️ using Go 1.26, Angular 22, Tailwind v4, and MySQL 8.4
+
+</div>
